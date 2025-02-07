@@ -1,0 +1,11 @@
+<div style="background-color: red;" >
+  <div *ngIf="product">
+    <h2>Detalle del producto: {{product.name}}</h2>
+    <div class="product-detail" >
+      <p>Precio:  {{product.price}}</p>
+    </div>
+    <div>
+      <button (click)="goToList()">Volver al listado</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div style="background-color: aquamarine;">
+  <div >
+    <h1>Hola, {{ title }}</h1>
+  </div>
+  <hr class="divider" />
+  <h2>Listado de productos:</h2>
+  <div class="product-list" >
+    <app-product-card *ngFor="let item of list"
+      [product]="item"
+    (productSelected)="goToDetail($event)"></app-product-card> 
+  </div>
+</div>

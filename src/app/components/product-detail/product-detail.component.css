@@ -1,0 +1,11 @@
+product-detail {
+  background-color: lightpink;
+}
+
+button {
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  cursor: pointer;
+}
