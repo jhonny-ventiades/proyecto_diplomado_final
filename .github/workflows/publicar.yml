@@ -1,14 +1,21 @@
-name: Publicar en Firebase Hosting (produccion)
-"on":
-  push:
-    branches:
-      - main
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: npm i
-      - run: npm install -g @angular/cli@latest
-      - run: ng build 
+# name: Publicar en Firebase Hosting (produccion)
+# "on":
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   build-and-depoy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - run: npm i
+#       - run: npm install -g @angular/cli@latest
+#       - run: ng build 
+#       - uses: FirebaseExtended/action-hosting-deploy@v0
+#         with:
+#           repoToken: '${{ secrets.repo-token }}'
+#           firebaseServiceAccount: '${{ secrets.firebase-service-account }}'
+#           projectId: 'diplomado-univ'
+#           target: 'diplomado-univ'
+
 
